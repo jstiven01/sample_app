@@ -8,4 +8,13 @@ module ApplicationHelper
       page_title + " | " + base_title
     end
   end
+
+  def button_text(button_text = '')
+    base_text = "Submit"
+    if button_text.empty?
+      base_text
+    else
+      button_text
+    end
+  end
 end
